@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/training-data.css">
+    <title>Datos capacitacion</title>
+</head>
+<body>
+    <div class="header">
+        <img src="./img/logoINE-blanco.png" alt="INE Logo">
+        <hr>
+    </div>
+
+    <div class="container">
+        <h1>Datos para la capacitacion</h1>
+        <hr>
+
+        <form id="qr-data-form">
+            <div class="form-group">
+                <label for="revisitas_hechas"><strong>Numero de revisitas hechas al ciudadano para la capacitacion:</strong></label>
+                <input type="text" id="revisitas_hechas" value="">
+            </div>
+
+            <div>
+                <h4>Lugar y tipo de capacitacion</h4>
+            </div>
+        
+            <div class="form-group">
+                <label for="lugar_capacitacion"><strong>Lugar:</strong></label>
+                <input type="text" id="lugar_capacitacion" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="modalidad"><strong>Modalidad:</strong></label>
+                <input type="text" id="modalidad" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="fecha_capacitacion"><strong>Fecha de capacitacion:</strong></label>
+                <input type="text" id="fecha_capacitacion" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="hora_capacitacion"><strong>Hora de capacitacion:</strong></label>
+                <input type="text" id="hora_capacitacion" value="">
+            </div>
+
+            <div>
+                <h4>Observaciones durante la primera revisita</h4>
+            </div>
+        
+            <div class="form-group">
+                <label for="numero_observaciones"><strong>Numero:</strong></label>
+                <input type="text" id="numero_observaciones" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="observaciones"><strong>Observaciones:</strong></label>
+                <input type="text" id="observaciones" value="">
+            </div>
+        </form>        
+
+        <div class="button-container">
+            <button class="button" onclick="window.location.href='manual-data.html'">Volver</button>
+            <button class="button" onclick="window.location.href='signature-official.html'">Siguiente</button>
+        </div>
+    </div>
+
+
+    <script src="./js/keyboard.js"></script>
+</body>
+</html>

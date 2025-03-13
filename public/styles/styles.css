@@ -1,0 +1,95 @@
+body {
+    padding-top: env(safe-area-inset-top);
+    min-height: 100dvh;
+    font-family: "Noto Sans", sans-serif;
+    background-color: #333333;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Contenedor del logo y la línea */
+.header {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header img {
+    width: 150px;
+    align-self: flex-start;
+}
+
+.header hr {
+    width: 99%;
+    border: 1px solid white;
+    margin-top: 10px;
+    align-items: center;
+}
+
+/* Contenedor principal */
+.container {
+    margin-top: 0vh;
+    text-align: center;
+    position: relative;
+    /* top: -80px; Mueve el título y botones más arriba */
+}
+
+/* Línea decorativa */
+.container hr {  
+    width: 50%;
+    border: 1px solid white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Estilos del título */
+h1 {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 1.6rem;
+    margin-bottom: 40px; /* Se redujo para acercarlo más a los botones */
+    margin-top: 80px;
+}
+
+/* Contenedor de botones */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos de los botones */
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 135px;
+    background-color: #F2EADA;
+    color: #5F5F5F;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 5px 0;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    opacity: 0.55;
+}

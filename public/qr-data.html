@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/qr-data.css">
+    <title>Datos del ciudadano</title>
+</head>
+<body>
+    <div class="header">
+        <img src="./img/logoINE-blanco.png" alt="INE Logo">
+        <hr>
+    </div>
+
+    <div class="container">
+        <h1>Datos del ciudadano</h1>
+        <hr>
+
+        <form id="qr-data-form">
+            <div class="form-group">
+                <label for="folio"><strong>Numero de folio (ciudadano):</strong></label>
+                <input type="text" id="folio" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="nombre"><strong>Nombre(s):</strong></label>
+                <input type="text" id="nombre" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="apellidos"><strong>Apellidos:</strong></label>
+                <input type="text" id="apellidos" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="direccion"><strong>Dirección del Ciudadano:</strong></label>
+                <input type="text" id="direccion" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="colonia"><strong>Colonia:</strong></label>
+                <input type="text" id="colonia" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="codigo_postal"><strong>Código postal:</strong></label>
+                <input type="text" id="codigo_postal" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="municipio"><strong>Municipio:</strong></label>
+                <input type="text" id="municipio" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="curp"><strong>Clave Única de Elector:</strong></label>
+                <input type="text" id="curp" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="entidad"><strong>Entidad:</strong></label>
+                <input type="text" id="entidad" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="distrito"><strong>Distrito:</strong></label>
+                <input type="text" id="distrito" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="municipio2"><strong>Municipio:</strong></label>
+                <input type="text" id="municipio2" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="localidad"><strong>Localidad:</strong></label>
+                <input type="text" id="localidad" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="seccion"><strong>Sección:</strong></label>
+                <input type="text" id="seccion" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="zore"><strong>ZORE:</strong></label>
+                <input type="text" id="zore" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="are"><strong>ARE:</strong></label>
+                <input type="text" id="are" value="">
+            </div>
+        </form>        
+
+        <div class="button-container">
+            <button class="button" onclick="window.location.href='index.html'">Volver</button>
+            <button class="button" onclick="window.location.href='manual-data.html'">Siguiente</button>
+        </div>
+    </div>
+
+    <script src="./js/keyboard.js"></script>
+
+</body>
+</html>

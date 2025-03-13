@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/qr-scanner.css">
+    <title>Escanear QR</title>
+</head>
+<body>
+    <div class="header">
+        <img src="./img/logoINE-blanco.png" alt="INE Logo">
+        <hr>
+    </div>
+
+    <div class="container">
+        <div class="camera-view">
+            <!-- Elemento de video para mostrar la cámara -->
+            <video id="qr-video" autoplay playsinline></video>
+        </div>
+        <hr>
+        <div class="button-container">
+            <button class="button" onclick="window.location.href='index.html'">Volver</button>
+        </div>
+    </div>
+
+    <!-- Incluye la librería qr-scanner -->
+    <script src="https://cdn.jsdelivr.net/npm/qr-scanner/qr-scanner.min.js"></script>
+    <script>
+        // Obtén el elemento de video
+        const videoElement = document.getElementById('qr-video');
+
+        // Inicializa el escáner de QR
+        const qrScanner = new QrScanner(
+            videoElement,
+            result => {
+                console.log('Código QR escaneado:', result);
+                alert(`Código QR detectado: ${result}`);
+                qrScanner.stop(); // Detener el escáner después de detectar un código
+            },
+            {
+                highlightScanRegion: true,
+                highlightCodeOutline: true,
+            }
+        );
+
+        // Inicia la cámara y el escáner
+        qrScanner.start().catch(err => {
+            console.error('Error al iniciar la cámara:', err);
+            alert('No se pudo acceder a la cámara. Asegúrate de conceder los permisos necesarios.');
+        });
+    </script>
+</body>
+</html>

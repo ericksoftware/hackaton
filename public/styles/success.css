@@ -1,0 +1,71 @@
+body {
+    font-family: "Noto Sans", sans-serif;
+    background-color: #333333;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Contenedor del logo y la línea */
+.header {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header img {
+    width: 150px;
+    align-self: flex-start;
+}
+
+.header hr {
+    width: 99%;
+    border: 1px solid white;
+    margin-top: 10px;
+}
+
+/* Contenedor principal */
+.container {
+    margin-top: 10vh;
+    text-align: center;
+    position: relative;
+    width: 90%;
+    max-width: 350px;
+}
+
+
+/* Estilos del título */
+h1 {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+}
+
+/* Contenedor de botones */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Estilos de los botones */
+.button {
+    width: 100px;
+    height: 40px;
+    background-color: #F2EADA;
+    color: #5F5F5F;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 200px;
+}

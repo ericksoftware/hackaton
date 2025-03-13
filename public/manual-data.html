@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/manual-data.css">
+    <title>Datos manual</title>
+</head>
+<body>
+    <div class="header">
+        <img src="./img/logoINE-blanco.png" alt="INE Logo">
+        <hr>
+    </div>
+
+    <div class="container">
+        <h1>Ingresa los siguientes datos</h1>
+        <hr>
+
+        <form id="qr-data-form">
+            <div class="form-group">
+                <label for="edad"><strong>Edad:</strong></label>
+                <input type="text" id="edad" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="sexo"><strong>Sexo:</strong></label>
+                <input type="text" id="sexo" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="telefono_particular"><strong>Telefono particular:</strong></label>
+                <input type="text" id="telefono_particular" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="telefono_celular"><strong>Telefono celular:</strong></label>
+                <input type="text" id="telefono_celular" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="telefono_trabajo"><strong>Telefono de trabajo o caseta:</strong></label>
+                <input type="text" id="telefono_trabajo" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="correo_electronico"><strong>Correo electronico:</strong></label>
+                <input type="text" id="correo_electronico" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="leer_escribir"><strong>Sabe leer y escribir:</strong></label>
+                <input type="text" id="leer_escribir" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="grado_estudio"><strong>Ultimo grado de estudio:</strong></label>
+                <input type="text" id="grado_estudio" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="profesion"><strong>Profesion:</strong></label>
+                <input type="text" id="profesion" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="ocupacion"><strong>Ocupacion:</strong></label>
+                <input type="text" id="ocupacion" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="dias_horarios"><strong>Dias y horarios en el que se puede localizar:</strong></label>
+                <input type="text" id="dias_horarios" value="">
+            </div>
+
+            <div>
+                <h4>Otro domicilio donde se puede localizar</h4>
+            </div>
+        
+            <div class="form-group">
+                <label for="direccion_otro_domicilio"><strong>Direccion del ciudadano:</strong></label>
+                <input type="text" id="direccion_otro_domicilio" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="colonia_otro_domicilio"><strong>Colonia localidad:</strong></label>
+                <input type="text" id="colonia_otro_domicilio" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="codigo_postal_otro_domicilio"><strong>Codigo postal:</strong></label>
+                <input type="text" id="codigo_postal_otro_domicilio" value="">
+            </div>
+        
+            <div class="form-group">
+                <label for="municipio_otro_domicilio"><strong>Municipio:</strong></label>
+                <input type="text" id="municipio_otro_domicilio" value="">
+            </div>
+        </form>        
+
+        <div class="button-container">
+            <button class="button" onclick="window.location.href='qr-data.html'">Volver</button>
+            <button class="button" onclick="window.location.href='training-data.html'">Siguiente</button>
+        </div>
+    </div>
+
+
+    <script src="./js/keyboard.js"></script>
+</body>
+</html>

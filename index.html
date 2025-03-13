@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Compras de Boletos</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="ventana1" class="ventana activa">
+            <h1>Selecciona Películass</h1>
+            <select id="peliculas">
+                <option value="10">Avengers: Endgame - $10</option>
+                <option value="8">Joker - $8</option>
+                <option value="12">Spider-Man: No Way Home - $12</option>
+            </select>
+            <button onclick="siguienteVentana(2)">Siguiente</button>
+        </div>
+
+        <div id="ventana2" class="ventana">
+            <h1>Selecciona tus Asientos</h1>
+            <div id="asientos"></div>
+            <button onclick="siguienteVentana(1)">Anterior</button>
+            <button onclick="siguienteVentana(3)">Siguiente</button>
+        </div>
+
+        <div id="ventana3" class="ventana">
+            <h1>Confirma tu Compra</h1>
+            <p id="resumen"></p>
+            <button onclick="siguienteVentana(2)">Anterior</button>
+            <button onclick="confirmarCompra()">Confirmar</button>
+        </div>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
