@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Aplicación de Cámara</title>
+    <link rel="stylesheet" href="./styles/scan-folio.css">
+</head>
+<body>
+
+    <div class="header">
+        <img src="./img/logoINE-blanco.png" alt="INE Logo">
+        <hr>
+    </div>
+    
+    <div class="camera-container">
+        <video id="video" autoplay playsinline></video>
+    </div>
+
+    <hr class="hr">
+
+    <!-- Contenedor para los botones -->
+    <div class="button-container">
+        <button class="button" id="volver" onclick="window.location.href='index.html'">Volver</button>
+        <button class="button2" id="siguiente" onclick="window.location.href='qr-data.html'">Siguiente</button>
+    </div>
+
+    <script src="./js/scan-folio.js"></script>
+</body>
+</html>

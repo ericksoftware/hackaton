@@ -6,28 +6,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <title>Registro de Funcionarios de Casillas</title>
+    <link rel="stylesheet" href="./styles/enter-folio.css">
+    <title>Datos del ciudadano</title>
 </head>
 <body>
     <div class="header">
         <img src="./img/logoINE-blanco.png" alt="INE Logo">
         <hr>
     </div>
+
     <div class="container">
-        <h1>Registro de funcionarios de casilla</h1>
+        <h1>Ingresa el folio</h1>
+        <hr>
+
+        <form id="qr-data-form">
+            <div class="form-group">
+                <label for="folio"><strong>N.Folio (ciudadano):</strong></label>
+                <input type="text" id="folio" value="">
+            </div>
+        </form>        
+
         <div class="button-container">
-            <button class="button" onclick="window.location.href='scan-folio.html'">
-                <img class="button-img2" src="./img/scan.png" alt="QR Icon"> Escanear folio
-            </button>
-            <hr>
-            <button class="button" onclick="window.location.href='enter-folio.html'">
-                <img class="button-img1" src="./img/note.png" alt="Manual Icon"> Ingresar folio
-            </button>
+            <button class="button" onclick="window.location.href='index.html'">Volver</button>
+            <button class="button" onclick="window.location.href='qr-data.html'">Siguiente</button>
         </div>
     </div>
 
-    <script src="./js/test.js"></script>
     <script src="./js/keyboard.js"></script>
+
 </body>
 </html>

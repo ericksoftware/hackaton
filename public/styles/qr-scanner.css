@@ -1,94 +1,22 @@
-body {
-    font-family: "Noto Sans", sans-serif;
-    background-color: #333333;
-    color: white;
+body, html {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-}
-
-/* Contenedor del logo y la línea */
-.header {
-    position: absolute;
-    top: 20px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.header img {
-    width: 150px;
-    align-self: flex-start;
-}
-
-.header hr {
-    width: 99%;
-    border: 1px solid white;
-    margin-top: 10px;
-}
-
-/* Contenedor principal */
-.container {
-    margin-top: 10vh;
-    text-align: center;
-    position: relative;
-    top: -50px;
-}
-
-/* Estilo para la vista de la cámara */
-.camera-view {
-    width: 250px;
-    height: 250px;
-    background-color: black;
-    border: 2px solid white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 100%;
     overflow: hidden;
+    background-color: black;
 }
 
-#qr-video {
+.camera-container {
     width: 100%;
-    height: auto;
-}
-
-/* Línea decorativa */
-.container hr {  
-    position: relative;
-    width: 99%;
-    border: 1px solid white;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    top: 70px;
-}
-
-/* Estilos del botón */
-.button {
+    height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 120px;
-    height: 40px;
-    background-color: #F2EADA;
-    color: #5F5F5F;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    border-radius: 16px;
-    cursor: pointer;
-    margin-top: 15px;
+    align-items: center;
 }
 
-.button-container{
-    position: relative;
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: 120px;
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

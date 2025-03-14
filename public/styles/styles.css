@@ -87,9 +87,16 @@ h1 {
     margin-bottom: 20px;
 }
 
-.button img {
+.button-img1 {
     width: 60px;
     height: 60px;
     margin-bottom: 10px;
     opacity: 0.55;
+}
+
+.button-img2 {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    opacity: 0.70;
 }

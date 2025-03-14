@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos del QR</title>
+</head>
+<body>
+    <h1>Datos del código QR:</h1>
+    <p id="qr-data"></p>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const qrData = localStorage.getItem('qrData');
+            if (qrData) {
+                document.getElementById('qr-data').textContent = qrData;
+            } else {
+                document.getElementById('qr-data').textContent = 'No se encontraron datos del QR.';
+            }
+        });
+    </script>
+</body>
+</html>
